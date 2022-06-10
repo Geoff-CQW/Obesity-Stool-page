@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Data cleaning and explorations &#8212; My Jupyter Book</title>
+    <title>Stool microbiome and obesity &#8212; My Jupyter Book</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -226,6 +226,13 @@ title="Print to PDF"
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#">
+   <h1>
+    Stool microbiome and obesity
+   </h1>
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-cleaning-and-explorations">
    Data cleaning and explorations
   </a>
  </li>
@@ -287,7 +294,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Data cleaning and explorations</h1>
+                <h1><h1> Stool microbiome and obesity </h1></h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -299,6 +306,13 @@ title="Print to PDF"
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#">
+   <h1>
+    Stool microbiome and obesity
+   </h1>
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-cleaning-and-explorations">
    Data cleaning and explorations
   </a>
  </li>
@@ -361,11 +375,13 @@ title="Print to PDF"
                 
               <div>
                 
-  <h1> Stool microbiome and obesity </h1>
+  <section id="h1-stool-microbiome-and-obesity-h1">
+<h1><h1> Stool microbiome and obesity </h1><a class="headerlink" href="#h1-stool-microbiome-and-obesity-h1" title="Permalink to this headline">#</a></h1>
 <p>The microbiome refers to all the microorganisms that live on or within the human body. Microorganisms can be found thriving in many sites of the body, including the skin, uterus, mouth and gastrointestinal tract. In fact it is estimated that there are more bacteria than cells in the human body, thus it is not surprising that studies have shown the microbiome has a significant impact on physical and even mental health. We have so much interdependence with the bacteria living on or in us, some studies have shown that the species composition of the gut microbiome is associated with many diseases, from cancer to metabolic syndrome. There is crosstalk between our body and the microbiome, our lifestyles and habits can alter the communities of our microbiome; their diversity and composition in turn affect our health.</p>
 <p>Although I’m currently working as a forensic scientist, my graduate research was on microbiology so I am quite interested in the correlation between the  composition of an individual’s stool microbiome and their physical status, especially any genus/species of bacteria that are important for the prediction of obesity. This would be a good opportunity to practice my analytics skills too, since I don’t get to use them much in my day to day work too.</p>
 <p>The dataset I’m using is a human metagenomics dataset from Kaggle which can be found <a class="reference external" href="https://www.kaggle.com/antaresnyc/human-metagenomics?select=abundance_stoolsubset.csv">here</a>. Credits for the data go to the original authors of the study and Kaggle user Alexey Kotlik who uploaded it.</p>
 <p><sub> All code cells are hidden by default, click on the button to display them </sub></p>
+</section>
 <section id="data-cleaning-and-explorations">
 <h1>Data cleaning and explorations<a class="headerlink" href="#data-cleaning-and-explorations" title="Permalink to this headline">#</a></h1>
 <div class="cell tag_hide-input docutils container">
@@ -726,16 +742,16 @@ Genus level dataset: 753 rows by 300 cols
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>row 625, total abundance 99.99992370605469
-row 205, total abundance 99.89722442626953
-row 734, total abundance 99.99999237060547
-row 732, total abundance 99.9927749633789
-row 656, total abundance 99.04145050048828
-row 522, total abundance 99.9999771118164
-row 585, total abundance 99.90008544921875
-row 604, total abundance 99.9999771118164
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>row 298, total abundance 99.97821807861328
+row 134, total abundance 99.99994659423828
+row 128, total abundance 99.99702453613281
+row 354, total abundance 99.8043212890625
+row 222, total abundance 99.85892486572266
 row 451, total abundance 99.9739990234375
-row 613, total abundance 99.96712493896484
+row 724, total abundance 99.89521026611328
+row 518, total abundance 99.98185729980469
+row 225, total abundance 99.99758911132812
+row 665, total abundance 99.99726867675781
 </pre></div>
 </div>
 </div>
@@ -749,16 +765,16 @@ row 613, total abundance 99.96712493896484
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>row 398, total abundance 100.00000762939453
-row 472, total abundance 100.00003814697266
-row 132, total abundance 100.00000762939453
-row 437, total abundance 100.00003814697266
-row 386, total abundance 100.00000762939453
-row 484, total abundance 100.0000228881836
-row 119, total abundance 100.00005340576172
-row 400, total abundance 100.00000762939453
-row 639, total abundance 100.0000228881836
-row 459, total abundance 100.00005340576172
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>row 393, total abundance 100.00000762939453
+row 711, total abundance 100.00003051757812
+row 249, total abundance 100.00005340576172
+row 568, total abundance 100.00003814697266
+row 88, total abundance 100.00000762939453
+row 362, total abundance 100.0000228881836
+row 166, total abundance 100.00003814697266
+row 362, total abundance 100.0000228881836
+row 391, total abundance 100.00000762939453
+row 701, total abundance 100.00000762939453
 </pre></div>
 </div>
 </div>
@@ -815,7 +831,7 @@ row 459, total abundance 100.00005340576172
 <img alt="_images/Project_26_1.png" src="_images/Project_26_1.png" />
 </div>
 </div>
-<div class="cell tag_hide-input tag_full-width tag_output_scroll docutils container">
+<div class="cell tag_hide-input tag_full-width docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">150</span><span class="p">)</span>
 
